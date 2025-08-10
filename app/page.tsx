@@ -159,8 +159,7 @@ export default function Portfolio() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 to-gray-600/20"></div>
         <div className="relative z-10 text-center px-4">
           <div className="mb-8 relative">
-            <div className="w-48 h-48 mx-auto rounded-full bg-gradient-to-r from-white to-gray-300 p-1 transform hover:scale-105 transition-transform duration-300 animate-pulse">
-              <div className="w-full h-full rounded-full bg-slate-900 flex items-center justify-center overflow-hidden">
+              <div className="w-48 h-48 mx-auto rounded-full overflow-hidden flex items-center justify-center cursor-pointer">
                 <Image
                   src="/professional-headshot.jpg"
                   alt="Profile"
@@ -169,7 +168,6 @@ export default function Portfolio() {
                   className="rounded-full w-full h-full object-cover object-top"
                 />
               </div>
-            </div>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent animate-fade-in">
