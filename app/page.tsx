@@ -212,7 +212,7 @@ export default function Portfolio() {
               <Github size={24} />
             </Link>
             <Link
-              href="https://www.linkedin.com/in/rishav-raj-a7b0b220b/"
+              href="https://www.linkedin.com/in/rishav-raj-710765262"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-400 hover:text-white transform hover:scale-110 transition-all duration-300 cursor-pointer"
