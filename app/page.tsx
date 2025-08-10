@@ -64,7 +64,7 @@ export default function Portfolio() {
     { name: "Next.js", level: 88, icon: Globe },
     { name: "Node.js", level: 85, icon: Code },
     { name: "UI/UX Design", level: 80, icon: Palette },
-    { name: "Mobile Dev", level: 75, icon: Smartphone },
+    { name: "Nest.js", level: 90, icon: Code }
   ]
 
   const projects = [
