@@ -22,8 +22,10 @@ import {
 } from "lucide-react"
 import Image from "next/image"
 import Link from "next/link"
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog"
 
 export default function Portfolio() {
+  const [openProfileDialog, setOpenProfileDialog] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [activeSection, setActiveSection] = useState("home")
 
@@ -159,15 +161,30 @@ export default function Portfolio() {
         <div className="absolute inset-0 bg-gradient-to-r from-gray-800/20 to-gray-600/20"></div>
         <div className="relative z-10 text-center px-4">
           <div className="mb-8 relative">
-              <div className="w-48 h-48 mx-auto rounded-full overflow-hidden flex items-center justify-center cursor-pointer">
-                <Image
-                  src="/professional-headshot.jpg"
-                  alt="Profile"
-                  width={256}
-                  height={256}
-                  className="rounded-full w-full h-full object-cover object-top"
-                />
-              </div>
+            <Dialog open={openProfileDialog} onOpenChange={setOpenProfileDialog}>
+              <DialogTrigger asChild>
+                <div className="w-48 h-48 mx-auto rounded-full overflow-hidden flex items-center justify-center cursor-pointer">
+                  <Image
+                    src="/professional-headshot.jpg"
+                    alt="Profile"
+                    width={256}
+                    height={256}
+                    className="rounded-full w-full h-full object-cover object-top"
+                  />
+                </div>
+              </DialogTrigger>
+              <DialogContent showCloseButton={false} className="flex items-center justify-center bg-transparent border-none shadow-none max-w-xl">
+                <div className="w-96 h-96 rounded-full overflow-hidden flex items-center justify-center bg-white">
+                  <Image
+                    src="/professional-headshot.jpg"
+                    alt="Profile Large"
+                    width={384}
+                    height={384}
+                    className="rounded-full w-full h-full object-cover object-top"
+                  />
+                </div>
+              </DialogContent>
+            </Dialog>
           </div>
 
           <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-white via-gray-200 to-gray-400 bg-clip-text text-transparent animate-fade-in">
