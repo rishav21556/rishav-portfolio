@@ -271,11 +271,7 @@ export default function Portfolio() {
 
               <div className="grid grid-cols-2 gap-4 pt-6">
                 <div className="text-center p-4 bg-white/5 rounded-lg backdrop-blur-sm">
-                  <div className="text-3xl font-bold text-white">5+</div>
-                  <div className="text-gray-400">Projects Completed</div>
-                </div>
-                <div className="text-center p-4 bg-white/5 rounded-lg backdrop-blur-sm">
-                  <div className="text-3xl font-bold text-gray-300">8</div>
+                  <div className="text-3xl font-bold text-gray-300">4</div>
                   <div className="text-gray-400">months Experience</div>
                 </div>
               </div>
